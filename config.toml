@@ -1,6 +1,6 @@
 baseURL = "https://goofish-shop.github.io/hugo-theme-puppet"
-languageCode = "en-us"
-title = "Put a site title here"
+
+title = "ahKevinXy"
 theme = "puppet"
 canonifyurls = true
 
