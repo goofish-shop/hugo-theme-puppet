@@ -2,4 +2,4 @@
 author = "Hugo Authors"
 +++
 
-Home Index Content
+这是一个首页的内容

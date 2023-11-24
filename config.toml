@@ -4,77 +4,133 @@ title = "Put a site title here"
 theme = "puppet"
 canonifyurls = true
 
-[params]
-  # General site metadata, used in header and other places
-  author = "Author's name goes here"
-  dateFormat = "January 2, 2006"
-  description = "This is a description of your site. This is also used in your site header metadata."
-  keywords = ""
-  email = "adam@adamwhitlock.com"
 
-  # Use your Font Awesome token here. Example token is fake, so please get your own.
-  fontawesomeToken = "018de52a07"
+copyright = ""
+paginate = 3
+languageCode = "en"
+defaultContentLanguage = "en"
 
-  # Use content from _index.md on homepage
-  # useIndexContent = true # default is false
+hasCJKLanguage = true
+enableInlineShortcodes = true
+enableEmoji = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
 
-  # Navigation, use Bulma options here
-  # navbarStyle = "is-transparent" # Default is "is-transparent"
-  # navbarTitleStyle = "has-text-black" # Default is "has-text-black"
-
-  # # Override Bulma schemes with values
-  # schemeMain = "" # Change background color, default is white
-  # link = "#000" # Bulma default is blue, though theme is black
-  # linkHover = "#888" # Bulma default is grey-darker, though theme is #888
-  # footerBackgroundColor = "false" # Bulma default is #fafafa. You can use "false" or #hex
-  # navbarItemHoverColor = "#444" # Bulma default is blue, though theme is #444
-  # navbarItemColor = "#888" # Bulma default is grey-dark, though theme is #888
-
-  # Set static directory locations and favicon
-  favicon = "favicon.ico"
-  staticDir = ['static']
-
-
-[menu]
-
-# Top Navigation
-[[menu.nav]]
-  identifier = 'home'
-  name = 'Home'
-  title = 'Home'
-  url = '/'
-  weight = 10
-
-[[menu.nav]]
-  identifier = 'archive'
-  name = 'Archive'
-  title = "Archive"
-  url = '/archive/'
-  weight = 20
-
-# Contacts
-
-[[ menu.social]]
-  identifier = 'linkedin'
-  name = 'LinkedIn'
-  pre = "<i class='fab fa-linkedin fa-lg'></i>"
-  url = "https://linkedin.com/in/yourlinkedinprofile"
-  weight = 10
-
-[[ menu.social]]
-  identifier = 'github'
-  name = 'Github'
-  pre = "<i class='fab fa-github fa-lg'></i>"
-  url = "https://github.com/yourgithubname"
-  weight = 20
-
-[[ menu.social]]
-  identifier = 'twitter'
-  name = 'Twitter'
-  pre = "<i class='fab fa-twitter fa-lg'></i>"
-  url = "https://twitter.com/yourtwittername"
-  weight = 30
+disqusShortname = ""
+googleAnalytics = ""
 
 [outputs]
-  home = ['HTML', 'RSS']
-  pages = ['HTML']
+home = ["HTML", "JSON", "RSS"]
+
+# prevent build failures when using Hugo's template _internal/opengraph.html 
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup]
+[markup.highlight]
+noClasses = true
+codeFences = true
+guessSyntax = true
+lineNos = true
+lineNumbersInTable = false
+style = "dracula"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "home"
+url = "/"
+weight = -100
+[[menu.main]]
+identifier = "research"
+name = "research"
+url = "/research/"
+weight = 10
+[[menu.main]]
+identifier = "publications"
+name = "publications"
+url = "/publications/"
+weight = 20
+[[menu.main]]
+identifier = "members"
+name = "members"
+url = "/members/"
+weight = 30
+[[menu.main]]
+identifier = "contract"
+name = "contract"
+url = "/contract/"
+weight = 50
+
+[[menu.main]]
+identifier = "opportunities"
+name = "opportunities"
+url = "/opportunities/"
+weight = 60
+
+[[menu.main]]
+identifier = "news"
+name = "news"
+url = "/news/"
+weight = 100
+
+
+[params]
+author = "ahKevinXy"
+description = ""
+keywords = "blog,developer,personal"
+img_home = "img/home-bg.jpg"
+img_404 = "img/404-bg.jpg"
+
+useFaviconGenerator = true
+
+custom_js = []
+custom_css = [] # ["css/custom.css"]  Add your file to assets folder  [assets/css/custom.css]
+
+[params.sidebar]
+enable = true
+gravatarEmail = ""
+# Overwritten by your gravatar image if `gravatarEmail` is filled
+avatar = "img/home-bg.jpg"
+bio = "lab website"
+
+#[params.social]
+#twitter = "johndoe"
+#facebook = "johndoe"
+#zhihu = "johndoe"
+#weibo = "johndoe"
+#github = "johndoe"
+#gitlab = "johndoe"
+#linkedin = "johndoe"
+rss = true
+[params.social.mastodon]
+weight = 56
+icon = "fab fa-mastodon"
+format = "https://mastodon.social/%v"
+id = "johndoe"
+url = ""
+
+#[[params.friends]]
+#name = "John Doe"
+#url = "https://gohugo.io"
+
+#[[params.friends]]
+#name = "John Doe"
+#url = "https://gohugo.io"
+
+# See https://giscus.app/
+#[params.giscus]
+#enable = true
+#repo = "roninro/hugo-theme-puppet"
+#repo_id = "R_kgDOHuvyhw"
+#category = "General"
+#category_id = "DIC_kwDOHuvyh84CQjDo"
+#input_position = "top"
+#theme = "light_tritanopia"
+#lang = "en"
