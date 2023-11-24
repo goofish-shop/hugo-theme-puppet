@@ -6,10 +6,12 @@ author: "ahKevinXy"
 ---
 
 
-# 这是一个联系我们的地方
+## Lab Address
+606, Building #7, Innovation Park
+School of Medicine, SUSTech
+Shenzhen, China, 518005
 
-111
+## Ruilin Tian
+tianrl@sustech.edu.cn
 
-1222
-
-2332
+tel: 0755-8801-8043

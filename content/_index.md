@@ -5,4 +5,8 @@ date: "2019-02-28"
 author: "ahKevinXy"
 ---
 
-这是一个首页的内容
+## Welcome to the ahKevinXy lab in the School of Medicine, SUSTech!
+
+
+
+Our lab studies the cellular and molecular mechanisms of human neurological diseases using CRISPR-based functional genomics tools
