@@ -1,6 +1,7 @@
 ---
 title : "Contact Us"
-description: "Hugo, the world's fastest framework for building websites"
+header_img: /img/archive-bg.jpg
+
 date: "2019-02-28"
 
 author: "ahKevinXy"
