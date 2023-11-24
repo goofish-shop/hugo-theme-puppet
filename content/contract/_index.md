@@ -1,9 +1,7 @@
 ---
 title : "Contact Us"
 header_img: /img/archive-bg.jpg
-
 date: "2019-02-28"
-
 author: "ahKevinXy"
 ---
 
