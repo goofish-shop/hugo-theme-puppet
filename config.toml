@@ -80,6 +80,12 @@ name = "news"
 url = "/news/"
 weight = 100
 
+[[menu.main]]
+identifier = "test"
+name = "news"
+url = "/test/"
+weight = 999
+
 
 [params]
 author = "ahKevinXy"
